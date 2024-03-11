@@ -22,3 +22,9 @@
 # Testar o Bot:
 1- Após a inicialização do bot, ela pode testá-lo enviando mensagens para a conta do WhatsApp associada às credenciais usadas no bot. O bot responderá conforme a lógica definida no código.
 Este guia deve ajudá-la a configurar e executar o bot com sucesso. Certifique-se de seguir cada etapa cuidadosamente para garantir que tudo funcione conforme o esperado.
+
+#Funcionalidades
+- Envio de mensagens automáticas.
+- Opção de escolher entre serviços ou visualizar um catálogo.
+- Encerramento automático da conversa após um período de inatividade.
+- Envio de documentos, como um catálogo em PDF.
