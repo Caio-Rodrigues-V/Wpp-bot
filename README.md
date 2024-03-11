@@ -19,3 +19,5 @@ Testar o Bot:
 
 Ela poderia testar o bot enviando mensagens para a conta do WhatsApp associada às credenciais usadas no bot. O bot responderá conforme a lógica definida no código.
 Certifique-se de que ela tenha permissões adequadas para usar a conta do WhatsApp para esse fim e que esteja em conformidade com as políticas de uso do WhatsApp.
+
+# Toda vez que fechar o visual studio precisará ler o qr code novamente
