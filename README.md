@@ -1,23 +1,22 @@
-Configurar o Ambiente de Desenvolvimento:
+# Configurar o Ambiente de Desenvolvimento:
 
-Instalar o Node.js em seu sistema, se ainda não estiver instalado.
-Criar um novo projeto Node.js e inicializá-lo com npm init.
-Instalar as dependências necessárias, como whatsapp-web.js e qrcode-terminal, utilizando o comando npm install whatsapp-web.js qrcode-terminal.
-Obter Credenciais do WhatsApp Web:
+1- Instalar o Node.js: Se o Node.js não estiver instalado, ela pode baixá-lo e instalá-lo em seu sistema a partir do site oficial: Node.js Downloads.
+2- Criar um novo projeto Node.js: Ela pode criar um novo diretório para o projeto e inicializá-lo com npm. No terminal, ela pode navegar até o diretório desejado e executar o comando:
+**npm init**  Isso guiará ela através do processo de criação do arquivo package.json.
 
-Ela precisaria usar o WhatsApp Web em um navegador para obter as credenciais de login necessárias para o bot. Isso pode ser feito escaneando o código QR exibido quando o bot é inicializado.
-Substituir o Código:
+3- instalar Dependências: Com o projeto inicializado, ela pode instalar as dependências necessárias, que são o whatsapp-web.js e qrcode-terminal, utilizando o comando:
 
-Ela substituiria o código atual do bot pelo código fornecido.
-Substituir o Caminho do PDF:
+# Obter Credenciais do WhatsApp Web:
+1- Ela precisa acessar o WhatsApp Web em um navegador em seu computador. Ela pode visitar web.whatsapp.com.
+2- No WhatsApp Web, ela precisa escanear o código QR exibido na tela usando o WhatsApp em seu dispositivo móvel. Isso vinculará o WhatsApp Web à sua conta do WhatsApp.
 
-Ela substituiria o caminho para o arquivo PDF do catálogo pelo caminho real do arquivo no sistema.
-Executar o Bot:
+# Substituir o Código:
+1- Ela precisa substituir o caminho para o arquivo PDF do catálogo pelo caminho real do arquivo no sistema. No código fornecido, o caminho para o arquivo PDF é definido pela variável pdfFilePath.
 
-Ela executaria o código do bot utilizando o comando node nome_do_arquivo.js.
-Testar o Bot:
+# Executar o Bot:
+1- No terminal, dentro do diretório do projeto, ela pode executar o bot usando o Node.js. Ela precisa digitar o seguinte comando:
+**node bot.js**
 
-Ela poderia testar o bot enviando mensagens para a conta do WhatsApp associada às credenciais usadas no bot. O bot responderá conforme a lógica definida no código.
-Certifique-se de que ela tenha permissões adequadas para usar a conta do WhatsApp para esse fim e que esteja em conformidade com as políticas de uso do WhatsApp.
-
-# Toda vez que fechar o visual studio precisará ler o qr code novamente
+# Testar o Bot:
+1- Após a inicialização do bot, ela pode testá-lo enviando mensagens para a conta do WhatsApp associada às credenciais usadas no bot. O bot responderá conforme a lógica definida no código.
+ Este guia deve ajudá-la a configurar e executar o bot com sucesso. Certifique-se de seguir cada etapa cuidadosamente para garantir que tudo funcione conforme o esperado.
