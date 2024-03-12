@@ -36,13 +36,13 @@ client.on('message', async (message) => {
         if (!conversation) {
             conversation = { user: message.from, lastActivity: Date.now() };
             conversations.push(conversation);
-            await client.sendMessage(message.from, 'Olá! Escolha uma opção:\n1. Serviços\n2. Ver catálogo');
+            await client.sendMessage(message.from, 'Olá, seja bem vindo(a) a Universo Tech 🪐📱. \nTrabalhamos com venda de acessórios para smartphone, computador, serviços, segunda via de conta, impressão, xerox etc. \nNos siga no Instagram para acompanhar as novidades da loja: \nhttps://www.instagram.com/universoo.tech/ \nEntão, como podemos te ajudar?\n Escolha uma opção:\n1. Atendimento\n2. Ver catálogo');
         } else {
             if (conversation.serviceRequested) {
                 // Se serviceRequested for true, responde à mensagem do cliente
                 if (message.body.toLowerCase() === '# sair') {
                     conversation.serviceRequested = false;
-                    await client.sendMessage(message.from, 'Você voltou para o menu principal.\n\nEscolha uma opção:\n1. Serviços\n2. Ver catálogo');
+                    await client.sendMessage(message.from, 'Você voltou para o menu principal.\n\nEscolha uma opção:\n1. Atendimento\n2. Ver catálogo');
                 } else if (!conversation.professionalResponded) {
                     // Se o profissional ainda não respondeu, não repita a mensagem do cliente
                     conversation.lastClientMessage = message.body; // Armazenar a última mensagem do cliente
@@ -50,14 +50,14 @@ client.on('message', async (message) => {
             } else if (conversation.catalogRequested) {
                 if (message.body.toLowerCase() === '# sair') {
                     conversation.catalogRequested = false;
-                    await client.sendMessage(message.from, 'Você voltou para o menu principal.\n\nEscolha uma opção:\n1. Serviços\n2. Ver catálogo');
+                    await client.sendMessage(message.from, 'Você voltou para o menu principal.\n\nEscolha uma opção:\n1. Atendimento\n2. Ver catálogo');
                 } else {
                     await client.sendMessage(message.from, 'Opção inválida. Digite "# sair" para voltar para o menu principal.');
                 }
             } else {
                 if (message.body === '1') {
                     conversation.serviceRequested = true;
-                    await client.sendMessage(message.from, 'Você escolheu Serviços. Aguarde enquanto conectamos você com um de nossos profissionais.');
+                    await client.sendMessage(message.from, 'Você escolheu Atendimento. Aguarde enquanto conectamos você com um de nossos profissionais.');
                 } else if (message.body === '2') {
                     conversation.catalogRequested = true;
                     await client.sendMessage(message.from, 'Você escolheu Ver catálogo.');
